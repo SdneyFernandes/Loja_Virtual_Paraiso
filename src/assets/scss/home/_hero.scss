@@ -1,0 +1,20 @@
+@use 'variaveis';
+
+
+.hero {
+    background-image: url(../images/swabdesign-aym3gJe9F9o-unsplash.jpg);
+    background-size: cover;
+    height: 142vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    &__content {
+        text-align: center;
+        margin-bottom: 10%;
+
+        h1{
+        margin-bottom: 5% ;
+        }
+    }
+}

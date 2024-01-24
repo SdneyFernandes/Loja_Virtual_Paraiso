@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dist/assets/scss/main.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <section class="payment">
+        <a href="home.html" class="button-cancel">
+            <img src="../dist/assets/images/icons8-cancelar-40.png" alt="">    
+        </a>
+        <div class="payment__content">
+            <form action="" class="form">
+            <div class="form1">
+                <h3 class="text">Dados cadastrais</h3>
+                <div class="form1__input-radio">
+                <label for="nacionalidade"></label>
+                <input type="radio" name="nacionalidade" value="brasileiro" checked>Brasileiro
+                <input type="radio" name="nacionalidade" value="estrangeiro" checked>Estrangeiro
+                </div>
+                <div class="form1__input-dados">
+                    <label for="name">Nome Completo</label>
+                    <input type="text" id="name" name="name" placeholder="Insira seu nome Completo" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Insira seu e-mail" required>
+                    <div>
+                    <label for="telefone">Celular</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(00) 000 000 000" required>
+                    <label for="cpfCnpj">CPF/CNPJ</label>
+                    <input type="text" id="cpfCnpj" name="cpfCnpj" placeholder="000.000.000-00" required>
+                    </div>
+                </div>
+            </div>
+            <div class="form2">
+                <h3 class="text">Selecionar Pagamento </h3>
+                <div class="form2__input-bandeiras">
+                    <a href="">
+                        <img src="../dist/assets/images/payment/icons8-boleto-64.png" alt="boleto">
+                    </a>
+                    <a href="">
+                        <img src="../dist/assets/images/payment/icons8-foto-40.png" alt="pix">
+                    </a>
+                    <a href="">
+                        <img src="../dist/assets/images/payment/icons8-mastercard-40.png" alt="mastercard">
+                    </a>
+                    <a href="">
+                        <img src="../dist/assets/images/payment/icons8-visa-48.png" alt="visa">
+                    </a>
+                </div>
+                <div class="form2__input-cartao">
+                    <label for="numbercard">Numero do cartão</label>
+                    <input type="text" id="numbercard" name="numbercard" placeholder="Insira apenas os 16 numeros" required>
+                    <label for="nameImpresso">Nome Impresso no Cartão</label>
+                    <input type="text" id="nameImpresso" name="nameImpresso" required>
+                    <div>
+                    <label for="validade">Validade</label>
+                    <input type="text" id="validade" name="validade" placeholder="(MM/AAAA)" required>
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" name="cvv" placeholder="(000)" required>
+                    </div>
+                    <label for="parcelamento">Número de Parcelas</label>
+                    <input type="number" id="parcelamento" name="parcelamento" min="1" max="12" placeholder="1x de R$ 850.00 " required> 
+                </div>
+            </div>
+            </form>
+            <button class="button__blue" type="submit" id="comprarAgora">Comprar Agora</button>
+        </div>
+    </section>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+<script src="../dist/assets/js/payment/payment.js"></script>
+</body>
+</html>

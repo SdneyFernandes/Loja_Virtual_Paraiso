@@ -1,0 +1,63 @@
+@use 'variaveis';
+
+.footer {
+    background-color: variaveis.$corDeFundoSecundaria;
+    padding: 8% 5% 0 5%;
+    height: 70vh;
+    
+    &__content {
+        display: flex;
+        justify-content: space-between;
+
+        &__contact{
+            display: flex;
+            justify-content: space-between;
+            line-height: 25px;
+            width: 40%;
+
+            a{
+            text-decoration: none;
+            color: variaveis.$corTextoPrincipal;
+            }
+            
+            &__participants, 
+            &__partnerships{
+    
+                p:first-child {
+                margin-bottom: 5%;
+                font-weight: bold;
+                }
+            }
+        }
+
+        &__form{
+            margin-right: 20%;
+
+            form{
+            display: flex;
+            flex-direction: column;
+            padding-top: 6%;
+
+                label{
+                padding-bottom: 3%;
+                }
+                
+                input{
+                width: 230%;
+                height: 40px;
+                border: none;
+                border-radius: 5px;
+                padding-left: 5%;
+                font-size: 15px;
+                font-weight: bold;
+                font-family: 'Red Hat Display', sans-serif;
+                margin-bottom: 7%;
+                }
+            }
+
+            button{
+            padding: 5%;
+            }
+        }
+    }
+}

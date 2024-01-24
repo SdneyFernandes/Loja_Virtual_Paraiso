@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dist/assets/scss/main.css">
+    <title>Loja</title>
+</head>
+<body>
+
+    <header class="header" id="main-header">
+        <h1 class="title--small">Paraiso</h1>
+        <nav class="header__nav">
+            <ul class="header__nav__list">
+                <li class="header__nav__list__item">
+                    <a href="home.html" class="link-text">HOME</a>
+                </li>
+                <li class="header__nav__list__item">
+                    <a href="shop.html" class="link-text">LOJA</a>
+                </li>
+                <li class="header__nav__list__item">
+                    <a href="about.html" class="link-text">SOBRE</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="cart-menu" class="cart-menu">
+            <table id="cart-table" class="cart-table">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Preço</th>
+                        <th>Quantidade</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items-table" class="cart-items">
+                    <!-- Itens do carrinho serão adicionados aqui dinamicamente -->
+                </tbody>
+            </table>
+            <div id="cart-total" class="cart-total">
+                <p>Total: <span id="total-amount">$0.00</span></p>
+            </div>
+            <button id="checkout-button" class="checkout-button">Finalizar Compra</button>
+        </div>
+        <div class="header__bag" id="header-bag">
+            <img src="../dist/assets/images/bolsa-de-compras.png" alt="bolsa-de-compras">
+            <a href="#">
+                <p>BOLSA DE COMPRAS (<span id="cart-count">0</span>)</p>
+            </a>
+        </div>
+        
+
+
+
+        
+    </header>
+
+    <section class="shop">
+    <div class="shop__content">
+        <h1 class="title--big">LOJA</h1>
+        <ul class="shop__content__list">
+            <li class="shop__content__list__item">
+                <img src="../dist/assets/images/pexels-cottonbro-studio-4542852.jpg" alt="bike1">
+                <a href="">
+                        <div class="item--inf">
+                            <h5 class="title--small">Carbon Light</h5>
+                            <p class="text">$850.00</p>
+                        </div>
+                </a>
+            </li>
+            <li class="shop__content__list__item">
+                <img src="../dist/assets/images/pexels-ali-arapoğlu-2256137.jpg" alt="bike2">
+            <a href="">
+                    <div class="item--inf">
+                        <h5 class="title--small">Herige Racer</h5>
+                        <p class="text">$635.00</p>
+                    </div>
+            </a>
+            </li>
+            <li class="shop__content__list__item">
+                <img src="../dist/assets/images/b3.jpeg" alt="bike3">
+            <a href="">
+                    <div class="item--inf">
+                        <h5 class="title--small">Litum Trial</h5>
+                        <p class="text">$980.00</p>
+                    </div>
+            </a>
+            </li>
+            <li class="shop__content__list__item">
+                <img src="../dist/assets/images/b4.jpeg" alt="bike4">
+            <a href="">
+                    <div class="item--inf">
+                        <h5 class="title--small">Neon Go01</h5>
+                        <p class="text">$989.00</p>
+                    </div>
+            </a>
+            </li>
+            <li class="shop__content__list__item">
+                <img src="../dist/assets/images/b5.jpeg" alt="bike5">
+            <a href="">
+                    <div class="item--inf">
+                        <h5 class="title--small">Oalan Road</h5>
+                        <p class="text">$448.85</p>
+                    </div>
+            </a>
+            </li>
+            <li class="shop__content__list__item">
+                <img src="../dist/assets/images/b6.jpeg" alt="bike6">
+            <a href="">
+                    <div class="item--inf">
+                        <h5 class="title--small">Vitage Roads</h5>
+                        <p class="text">$845.00</p>
+                    </div>
+            </a>
+            </li>
+        </ul>
+    </div>
+    </section>
+
+    <footer class="footer">
+    <div class="footer__content text--small">
+        <div class="footer__content__contact">
+            <div class="footer__content__contact__participants">
+                <p >Para participantes</p>
+                <p ><a href="#">participants@paraiso.com</a></p>
+                <p >123-456-789</p>
+            </div>
+            <div class="footer__content__contact__partnerships">
+                <p >Para colaboração</p>
+                <p ><a href="#">partnerships@paraiso.com</a></p>
+                <p >123-456-789</p>
+            </div>
+        </div>
+        <div class="footer__content__form">
+            <h4 class="text--small">Fale-Conosco</h4>
+            <form action="https://formspree.io/f/xqkraejk" method="POST" id="form"  >
+                <label for="name">Seu nome completo</label >
+                <input type="text" id="name" class="form-control" name="nomeCompleto">
+                <label for="email">Seu email</label >
+                    <input type="email" id="email" class="form-control" name="email">
+                <button class="button__dark" type="submit"  value="Enviar">Enviar</button>
+            </form>
+        </div>
+    </div>
+    </footer>
+
+<script src="../dist/assets/js/home/home.js"></script>
+</body>
+</html>

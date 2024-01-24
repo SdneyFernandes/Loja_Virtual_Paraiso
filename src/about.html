@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dist/assets/scss/main.css">
+    <title>Sobre</title>
+</head>
+<body>
+    
+    <header class="header" id="main-header">
+        <h1 class="title--small">Paraiso</h1>
+        <nav class="header__nav">
+            <ul class="header__nav__list">
+                <li class="header__nav__list__item">
+                    <a href="home.html" class="link-text">HOME</a>
+                </li>
+                <li class="header__nav__list__item">
+                    <a href="shop.html" class="link-text">LOJA</a>
+                </li>
+                <li class="header__nav__list__item">
+                    <a href="about.html" class="link-text">SOBRE</a>
+                </li>
+            </ul>
+        </nav>
+        <div id="cart-menu" class="cart-menu">
+            <table id="cart-table" class="cart-table">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Preço</th>
+                        <th>Quantidade</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items-table" class="cart-items">
+                </tbody>
+            </table>
+            <div id="cart-total" class="cart-total">
+                <p>Total: <span id="total-amount">$0.00</span></p>
+            </div>
+            <button id="checkout-button" class="checkout-button">Finalizar Compra</button>
+        </div>
+        <div class="header__bag" id="header-bag">
+            <img src="../dist/assets/images/bolsa-de-compras.png" alt="bolsa-de-compras">
+            <a href="#">
+                <p>BOLSA DE COMPRAS (<span id="cart-count">0</span>)</p>
+            </a>
+        </div>
+    </header>
+
+    <section class="main">
+        <div class="main__content">
+            <div class="main__content__inspiration">
+                <div class="main__content__inspiration__inf">
+                    <h1 class="title--big">A inspiração por trás da Paraiso</h1>
+                    <a href="shop.html">
+                    <button class="button__dark">Explore nossa loja</button>
+                    </a>
+                </div>
+                <img src="../dist/assets/images/s4.jpeg" alt="">
+            </div>
+            <div class="main__content__img">
+                <img src="../dist/assets/images/pexels-clem-onojeghuo-173294.jpg" alt="">
+            </div>
+            <div class="main__content__vintage">
+                <h1 class="title--big">Somos loucos por bicicletas vintage.</h1>
+                <img src="../dist/assets/images/s2.jpeg" alt="">
+            </div>
+            <div class="main__content__objective">
+                <h2 class="title">Nosso objetivo é ser excepcional no que fazemos.</h2>
+                <p class="text">Paraiso começou como uma conversa entre três amigos que compartilhavam uma paixão por bicicletas de estrada vintage. Agora crescemos e nos tornamos uma loja, showroom, oficina e espaço comunitário, onde celebramos tudo o que tem a ver com a cultura da bicicleta. Queremos capacitar todos a andar de bicicleta e ver o mundo sobre duas rodas.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__content text--small">
+        <div class="footer__content__contact">
+            <div class="footer__content__contact__participants">
+                <p >Para participantes</p>
+                <p ><a href="#">participants@paraiso.com</a></p>
+                <p >123-456-789</p>
+            </div>
+            <div class="footer__content__contact__partnerships">
+                <p >Para colaboração</p>
+                <p ><a href="#">partnerships@paraiso.com</a></p>
+                <p >123-456-789</p>
+            </div>
+        </div>
+        <div class="footer__content__form">
+            <h4 class="text--small">Fale-Conosco</h4>
+            <form action="https://formspree.io/f/xqkraejk" method="POST" id="form"  >
+                    <label for="name">Seu nome completo</label >
+                    <input type="text" id="name" class="form-control" name="nomeCompleto">
+                    <label for="email">Seu email</label >
+                        <input type="email" id="email" class="form-control" name="email">
+                    <button class="button__dark" type="submit"  value="Enviar">Enviar</button>
+            </form>
+        </div>
+        </div>
+    </footer>
+
+<script src="../dist/assets/js/home/home.js"></script>
+</body>
+</html>

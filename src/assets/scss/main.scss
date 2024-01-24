@@ -1,0 +1,97 @@
+@use 'variaveis';
+@use 'home/header';
+@use 'home/hero';
+@use 'home/about';
+@use 'home/footer';
+@use 'shop/shop';
+@use 'about/main';
+@use 'payment/payment';
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,700&family=Red+Hat+Display:wght@400;700&display=swap');
+
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.button__blue{
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: bold;
+    color: variaveis.$corTextoPrincipal;
+    padding: 2%;
+    background-color: variaveis.$corDeFundoBotaoBlue;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+        &:hover {
+            background-color: darken(variaveis.$corDeFundoBotaoBlue, 20%);
+        }
+}
+
+.button__dark{
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: bold;
+    color: variaveis.$corTextoPrincipal;
+    padding: 2%;
+    background-color: variaveis.$corDeFundoBotaoDark;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+        &:hover {
+            background-color: lighten(variaveis.$corDeFundoBotaoDark, 20%);
+        }
+}
+
+
+.title--big {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: bold;
+    font-size: 88px;
+    color: variaveis.$corTextoPrincipal;
+}
+
+.title {
+    font-size: 40px;
+    color: variaveis.$corTextoSecundario;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.title--small {
+    font-size:24px;
+    color: variaveis.$corTextoSecundario;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.text--big {
+    font-size: 22px;
+    color: variaveis.$corTextoSecundario;
+    font-family: 'Nunito Sans', sans-serif ;
+}
+
+.text{
+    font-size: 20px;
+    color: variaveis.$corTextoSecundario;
+    font-family: 'Nunito Sans', sans-serif; 
+}
+
+.text--small {
+    color: variaveis.$corTextoPrincipal ;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 15px;
+}
+
+.link-text {
+    text-decoration: none;
+    color: variaveis.$corTextoSecundario ;
+    font-family: 'Red Hat Display', sans-serif;
+    border: 1px solid transparent;
+    transition: 0.5s ease;
+    font-size: 15px;
+
+    &:hover{
+    border-bottom: 1px solid variaveis.$corTextoSecundario;
+    }
+}
+
