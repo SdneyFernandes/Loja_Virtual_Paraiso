@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../dist/assets/js/menu-mobile/mobile.js"></script>
     <link rel="stylesheet" href="../dist/assets/scss/main.css">
     <title>Loja</title>
 </head>
 <body>
 
     <header class="header" id="main-header">
+        <button class="hamburger" onclick="toggleMenu()"></button>
         <h1 class="title--small">Paraiso</h1>
         <nav class="header__nav">
             <ul class="header__nav__list">
@@ -23,7 +25,6 @@
                 </li>
             </ul>
         </nav>
-
         <div id="cart-menu" class="cart-menu">
             <table id="cart-table" class="cart-table">
                 <thead>
@@ -35,7 +36,6 @@
                     </tr>
                 </thead>
                 <tbody id="cart-items-table" class="cart-items">
-                    <!-- Itens do carrinho serão adicionados aqui dinamicamente -->
                 </tbody>
             </table>
             <div id="cart-total" class="cart-total">
@@ -46,15 +46,28 @@
         <div class="header__bag" id="header-bag">
             <img src="../dist/assets/images/bolsa-de-compras.png" alt="bolsa-de-compras">
             <a href="#">
-                <p>BOLSA DE COMPRAS (<span id="cart-count">0</span>)</p>
+                <p> <span class="header__bag__text">BOLSA DE COMPRAS</span>
+                    (<span id="cart-count">0</span>)
+                </p>
             </a>
         </div>
-        
-
-
-
-        
     </header>
+
+    <section class="mobile">
+    <div class="mobile-menu">
+        <ul class="header__nav__list" id="menu">
+            <li class="header__nav__list__item">
+                <a href="home.html" class="link-text">HOME</a>
+            </li>
+            <li class="header__nav__list__item">
+                <a href="shop.html" class="link-text">LOJA</a>
+            </li>
+            <li class="header__nav__list__item">
+                <a href="about.html" class="link-text">SOBRE</a>
+            </li>
+        </ul>
+    </div>
+    </section>
 
     <section class="shop">
     <div class="shop__content">

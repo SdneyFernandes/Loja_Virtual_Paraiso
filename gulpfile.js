@@ -21,15 +21,11 @@ function images() {
         .pipe(gulp.dest('./dist/assets/images'));
 }
 
-// Tarefa padrão que executa todas as tarefas
 exports.default = gulp.parallel(styles, images, scripts);
-
-// Tarefas individuais
 exports.styles = styles;
 exports.images = images;
 exports.scripts = scripts;
 
-// Tarefa de observação
 exports.watch = function() {
     gulp.watch('./src/**/*.scss', gulp.parallel(styles));
     gulp.watch('./src/**/*.js', gulp.parallel(scripts));

@@ -4,16 +4,33 @@
     background-color: variaveis.$corDeFundoSecundaria;
     padding: 8% 5% 0 5%;
     height: 70vh;
+
+    @media (max-width:750px) {
+        height: 90vh;
+    }
+
+    @media (min-width:751px) and (max-width:1023px){
+        height: 85vh;
+    }
     
     &__content {
         display: flex;
         justify-content: space-between;
+
+        @media (max-width:750px) {
+            display: flex;
+            flex-direction: column;
+        }
 
         &__contact{
             display: flex;
             justify-content: space-between;
             line-height: 25px;
             width: 40%;
+
+            @media (max-width:750px) {
+            font-size:13px;
+            }
 
             a{
             text-decoration: none;
@@ -22,6 +39,10 @@
             
             &__participants, 
             &__partnerships{
+
+                @media (max-width:750px) {
+                    padding-left: 15%;
+                }
     
                 p:first-child {
                 margin-bottom: 5%;
@@ -32,6 +53,12 @@
 
         &__form{
             margin-right: 20%;
+
+            @media (max-width:750px) {
+                margin-top: 70px;
+                margin-left: 5%;
+                font-size: 14px;
+            }
 
             form{
             display: flex;
@@ -52,11 +79,27 @@
                 font-weight: bold;
                 font-family: 'Red Hat Display', sans-serif;
                 margin-bottom: 7%;
+
+                @media (max-width:750px) {
+                width: 120%;
+                height: 30px;
                 }
+
+                @media (min-width:751px) and (max-width:1023px){
+                width: 160%;
+                height: 40px;
+                }
+
             }
+        }
 
             button{
             padding: 5%;
+
+            @media (max-width:750px) {
+                width: 40%;
+            }
+
             }
         }
     }

@@ -3,6 +3,10 @@
 .shop {
     padding: 0 5% 0 5%;
 
+    @media (max-width:750px) {
+        height: 420vh;
+      } 
+
     &__content {
         padding-top: 8%;
 
@@ -17,6 +21,10 @@
         gap: 24px;
         grid-template-columns: 1fr 1fr 1fr;
         padding-bottom: 3%;
+
+        @media (max-width:750px) {
+            display: block;
+          } 
         
             &__item{
                 list-style: none;
@@ -25,10 +33,22 @@
                 height: 100%;
                 margin-bottom: -40%;
 
+                @media (max-width:750px) {
+                    margin-top: 10%;
+                    height: 80vh;
+                  } 
+
                 img{
                 width: 100%;
                 height: 90%;
-                border-radius: 2%;                   
+                border-radius: 2%; 
+                
+                @media (max-width:750px) {
+                    width: 100%;
+                    height: 50vh;
+                    border-radius: 0;
+                  } 
+
                 }
 
                 a{
@@ -45,15 +65,61 @@
                 border-radius: 5%;
                 border: none;
 
+                @media (max-width:750px) {
+                    background-color: none;
+                    width: 45%;
+                    height: 8vh;
+                    top: 63%;
+                    left: 0%;
+                    padding: 0;
+                    opacity: 80%;
+                  } 
+
+                  @media (min-width:751px) and (max-width:1023px) {
+                    background-color: none;
+                    width: 60%;
+                    height: 4vh;
+                    top: 73%;
+                    left: 0%;
+                    padding: 0;
+                    opacity: 80%;
+                    background-color: variaveis.$corTextoSecundario;
+                  } 
+
                     &:hover {
-                    background-color: #000;
+                    background-color: variaveis.$corTextoSecundario;
                     opacity: 80%; 
                     transform: scale(1.2); 
                     transition: transform 0.5s ease;
+
+                    @media (max-width:750px) {
+                        background-color: transparent;
+                        opacity: 100%;
+                        transform: none;
+                        transition: none;
+                      } 
+
+                      @media (min-width:751px) and (max-width:1023px) {
+                        background-color: transparent;
+                        opacity: 100%;
+                        transform: none;
+                        transition: none;
+                      } 
                     }
 
                     h5, p{
                     color: variaveis.$corTextoPrincipal;
+
+                    @media (max-width:750px) {
+                        color: variaveis.$corTextoSecundario;
+                        font-size: 17px;
+                        font-size: bold;
+                      } 
+
+                      @media (min-width:751px) and (max-width:1023px) {
+                        font-size: 17px;
+                        font-weight: bold;
+                      } 
                     }
                 }
             }

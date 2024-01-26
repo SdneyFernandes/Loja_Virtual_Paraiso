@@ -1,7 +1,7 @@
 @use 'variaveis';
 
 .payment{
-  height: 100vh;
+  height: 115vh;
   padding-top: 5%;
   background-image: url(../../../../dist/assets/images/pexels-clem-onojeghuo-173294.jpg);
   background-repeat: no-repeat;
@@ -9,16 +9,37 @@
   font-family: 'Nunito Sans', sans-serif ;
   font-weight: bold;
 
-  &__content{
-    
+  @media (max-width:750px) {
+    height: 198vh;
+    padding-top: 20%;
+  }
+
+  @media (min-width:751px) and (max-width:1023px) {
+       height: 110vh;
+  }
+
+    &__content{
     form{
       display: flex;
-      width: 90%;
+      width: 83%;
       height: 75vh;
       margin: 0 auto;
       padding-top: 2%;
       background-color: rgba(255, 255, 255, 0.7);
       border-radius: 3px;
+
+      @media (max-width:750px) {
+        height: 150vh;
+        display: block;
+        font-size: 14px;
+        padding-top:7% ;
+        width: 100%;
+      }
+
+      @media (min-width:751px) and (max-width:1023px) { 
+        width: 100%;
+        height: 40vh;
+      }
 
         h3{
         text-align: center;
@@ -30,7 +51,7 @@
 
         &__input-radio{
             text-align: center;
-            margin: 6% 0 4% 0;
+            margin: 6% 0 5% 0;
 
             input{
             margin-left: 1%;
@@ -49,20 +70,51 @@
           border-radius: 3px;
           padding-left: 3%;
           font-weight: bold;
+
+          @media (max-width:750px) {  
+            width: 105%;
+          }
+
+          @media (min-width:751px) and (max-width:1023px) {
+            width: 100%;
+            height: 4vh;
+          }
+
         }
 
           #telefone,
           #cpfCnpj{
             width: 35%;
+
+            @media (max-width:750px) {
+              width: 70%;
+              display: block;
+            }
+
+            @media (min-width:751px) and (max-width:1023px) {
+              width: 30%;
+            }
           }
         }
       }
 
       .form2{
+        @media (max-width:750px) {    
+          margin-top: 15%;
+          margin-left: 2%;
+        }
         
         &__input-bandeiras{
           text-align: center;
           margin: 5% 0 1% 0;
+
+          @media (max-width:750px) {  
+            margin-bottom: 7%;
+          }
+
+          @media (min-width:751px) and (max-width:1023px) {
+            margin: 4% 0 4% 0
+          }
 
           a{
           text-decoration: none;
@@ -85,13 +137,31 @@
             margin: 7px 0 7px 0;
             padding-left: 3%;
             font-weight: bold;
+
+            @media (max-width:750px) {
+              width: 90%;
+            }
+
+            @media (min-width:751px) and (max-width:1023px) {
+              width: 90%;
+              height: 4vh;
+            }
+
           }
 
           #validade, 
           #cvv{
-            width: 38%;
-          }
+            width: 37%;
 
+            @media (max-width:750px) {
+              width: 70%;
+              display: block;
+            }
+
+            @media (min-width:751px) and (max-width:1023px) {
+              width: 28%;
+            }
+          }
         }
       }
     }
@@ -104,14 +174,41 @@
       margin-left: 34%;
       border: none;
       padding: 0%;
+
+      @media (max-width:750px) {
+        margin-top: 5%;
+      }
+
+      @media (min-width:750px) and (max-width:1023px) {
+        width: 30%;
+        height: 5vh;
+        margin-top: 5%;
+      }
     }
 
   }
 
   .button-cancel{
-    display: flex;
-    justify-content:right;
-    margin: -40px 5% 1% 0;
-  }
+    width: 10%;
+    margin-left:5% ;
 
+    :hover{
+      opacity: 80%;
+    }
+
+    img{
+      width: 3%;
+      margin-bottom: 0;
+
+      @media (max-width:750px) {      
+        width: 10%;
+      }
+
+      @media (min-width:750px) and (max-width:1023px) {
+       width: 5%;
+       margin-bottom: 2%;
+      }
+
+    }
+  }
 }
